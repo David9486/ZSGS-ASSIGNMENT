@@ -64,30 +64,26 @@ a) 1 b) w
 }*/
 
 //b. 
-/*class Pattern2{
+class Pattern2{
 	public static void main(String[] args){
-		int i=1;
-		int n=3;
-		char c='w';
-		while(i<=(2*n)-1){
-			int col=i>n?2*n-i:i;
-			int sp=n-col;
-			int s=1;
-			while(s<=sp){
-				System.out.print(" ");
-				s++;
+		char s='w';
+		int n=5;
+		for(int i=1;i<=n;i++){
+			int col;
+			if (i <= 3) {
+                col = i;
+            } else {
+                col = 6 - i; 
+            }
+			for(int j=1;j<=col;j++){
+				System.out.print(s+" ");
 			}
-			int j=1;
-			while(j<=col){
-				System.out.print(c+" ");
-				j++;
-			}
-			i++;
+			col++;
 			System.out.println();
 		}
 	
 	}
-}*/
+}
 
 /*4. Write a program to do the following patterns using do...while loop?
 a) Pascal Triangle
