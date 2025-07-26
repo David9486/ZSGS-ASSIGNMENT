@@ -64,12 +64,11 @@ class EqualNumbers{
 	public static void main(String[] args){
 		int a=10;
 		int b=10;
-		String str=Integer.toString(a);
-		String str1=Integer.toString(b);
-		if(str.equals(str1)){
-			System.out.print("the two numbers are equal");
-		}
-		else System.out.print("they are not equal");
+		int xor=a^b;
+		boolean[] arr=new boolean[xor+1];
+		arr[xor]=true;
+		String result=arr[0]:"the numbers are equal":"the numbers are not equal";
+		System.out.println(result);
 	}
 }
 
