@@ -121,7 +121,28 @@ IONS  */
 			
 	}
 }*/
-
+//b
+class Pattern4{
+	public static void main(String[] args){
+		char[] arr={'Z','O','H','O','C','O','R','P','O','R','A','T','I','O','N','S'};
+        int i=1;
+        int n=4;
+        int p=0;
+        do{
+            int j=1;
+            do{
+                if(j>n){
+                    break;
+                }
+                System.out.print(arr[p]);
+                j++;
+                p++;
+            }while(true);
+            i++;
+            System.out.println();
+        }while(i<=n);
+    }
+}
 
 
 
