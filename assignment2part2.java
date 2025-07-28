@@ -198,7 +198,28 @@ class SelectionSort{
 			System.out.print("the array after sorted is: "+Arrays.toString(arr));
 		}
 }
-
+//8. Write a program which takes in 10 people’s age and gives number of people who are <18, 18-60, >60.
+class Ages{
+	public static void main(String[] args){
+	Scanner sc=new Scanner(System.in);
+        int[] arr=new int[10];
+        int c1=0;
+        int c2=0;
+        int c3=0;
+        for(int i=0;i<10;i++){
+            System.out.println("enter the individual's age: ");
+           arr[i]=sc.nextInt();
+        }
+        for(int i=0;i<10;i++){
+            if(arr[i]<18)c1++;
+            else if(arr[i]>18&&arr[i]<60)c2++;
+            else if(arr[i]>60) c3++;
+        }
+        System.out.println("the number of people who are aged less than 18: "+c1);
+        System.out.println("the number of people who are aged greater than 18 and less than 60: "+c2);
+        System.out.println("the number of people who are aged greater than 60: "+c3);
+    }
+}	
 
 //9. Write an array which takes in roll no and marks in 3 subjects for 10 students.
 // Format and Print the roll no, total marks and average for all students in a table form.
